@@ -1,0 +1,17 @@
+var RITM_list_status_date = Class.create();
+RITM_list_status_date.prototype = {
+    initialize: function() {
+       var incArr=[];
+       var currentDate = new GlideDate();
+       var startDate;
+       var endDate;
+if(currentDate.GetMonth()>=1 && currentDate.getMonth()<=6){
+  // Period
+  startDate=currentDate.getYear()+'-01-01';
+  endDate=currentDate.getYear()+'-06'
+}
+
+    },
+
+    type: 'RITM_list_status_date'
+};
